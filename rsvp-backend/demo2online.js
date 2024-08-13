@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true })); // To parse URL-encoded bodies
 app.use(cors());
 
 const connection = mysql.createConnection({
-  host: 'mysql -h database-2.czes8oygqqoo.us-east-2.rds.amazonaws.com',  // e.g., mydbinstance.123456789012.us-east-1.rds.amazonaws.com
+  host: 'database-2.czes8oygqqoo.us-east-2.rds.amazonaws.com',  // e.g., mydbinstance.123456789012.us-east-1.rds.amazonaws.com
   user: 'admin',      // e.g., admin
   password: 'FluffysRDS!',  // Your RDS password
   database: 'database-2', // Your database name
