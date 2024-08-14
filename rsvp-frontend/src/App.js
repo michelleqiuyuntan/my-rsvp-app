@@ -4,13 +4,15 @@ import NameForm from './components/NameForm';
 import NameList from './components/NameList';
 const port = 3004;
 
+const apiUrl = 'ec2-18-221-126-127.us-east-2.compute.amazonaws.com';
+
 function App() {
   const [names, setNames] = useState([]);
 
   useEffect(() => {
     const fetchNames = async () => {
       try {
-        const response = await axios.get(`http://localhost:${port}/api/names`);
+        const response = await axios.get(`${apiUrl}/api/names`);
         setNames(response.data);
       } catch (error) {
         console.error('Error fetching names:', error);
