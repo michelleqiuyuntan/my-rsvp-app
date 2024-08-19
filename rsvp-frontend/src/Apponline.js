@@ -6,7 +6,7 @@ const port = 3004;
 
 const apiUrl = 'ec2-18-221-126-127.us-east-2.compute.amazonaws.com:3004';
 
-function App() {
+function Apponline() {
   const [names, setNames] = useState([]);
 
   useEffect(() => {

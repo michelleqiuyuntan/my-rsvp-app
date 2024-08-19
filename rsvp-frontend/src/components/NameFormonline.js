@@ -3,7 +3,7 @@ import axios from 'axios';
 const port = 3004;
 const apiUrl = 'ec2-18-221-126-127.us-east-2.compute.amazonaws.com';
 
-function NameForm({ onAddName }) {
+function NameFormonline({ onAddName }) {
   const [name, setName] = useState('');
 
   const handleSubmit = async (e) => {
