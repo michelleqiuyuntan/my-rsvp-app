@@ -31,4 +31,4 @@ function NameFormonline({ onAddName }) {
   );
 }
 
-export default NameForm;
+export default NameFormonline;

@@ -31,10 +31,10 @@ function Apponline() {
   return (
     <div>
       <h1>RSVP Tool</h1>
-      <NameForm onAddName={handleAddName} />
+      <NameFormonline onAddName={handleAddName} />
       <NameList names={names} />
     </div>
   );
 }
 
-export default App;
+export default Apponline;
