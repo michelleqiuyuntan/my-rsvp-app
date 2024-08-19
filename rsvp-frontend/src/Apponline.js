@@ -4,7 +4,7 @@ import NameFormonline from './components/NameFormonline';
 import NameList from './components/NameList';
 const port = 3004;
 
-const apiUrl = 'ec2-18-221-126-127.us-east-2.compute.amazonaws.com';
+const apiUrl = 'ec2-18-221-126-127.us-east-2.compute.amazonaws.com:3004';
 
 function App() {
   const [names, setNames] = useState([]);
