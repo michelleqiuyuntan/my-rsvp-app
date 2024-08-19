@@ -67,6 +67,6 @@ app.get('/api/test', (req, res) => {
 
 app.listen(port, () => {
   const host = process.env.HOST || 'localhost';
-  const publicIp = 'your-ec2-public-ip'; // Replace with your EC2 public IP or DNS
+  const publicIp = 'ec2-18-223-21-34.us-east-2.compute.amazonaws.com'; // Replace with your EC2 public IP or DNS
   console.log(`Server running on http://${host}:${port} (access externally via http://${publicIp}:${port}) and connected to RDS`);
 });
