@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 const port = 3004;
-const apiUrl = `http://localhost:${port}`;
+const apiUrl = 'ec2-18-221-126-127.us-east-2.compute.amazonaws.com';
 
 function NameForm({ onAddName }) {
   const [name, setName] = useState('');
@@ -9,7 +9,7 @@ function NameForm({ onAddName }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${apiUrl}/api/names`, { name });
+      const response = await axios.post(`http://${apiUrl}/api/names`, { name });
       console.log('Response from backend:', response.data);
       onAddName(response.data);
       setName('');
