@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 const port = 3004;
-const apiUrl = 'ec2-18-221-126-127.us-east-2.compute.amazonaws.com';
+const apiUrl = 'ec2-3-18-233-28.us-east-2.compute.amazonaws.com';
 
 function NameFormonline({ onAddName }) {
   const [name, setName] = useState('');
